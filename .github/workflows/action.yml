@@ -45,9 +45,9 @@ jobs:
           path: ${{ github.sha }}.zip
 
   publish:
-  permissions:
-  contents: 'read'
-  id-token: 'write'
+    permissions:
+      contents: 'read'
+      id-token: 'write'
 
     runs-on: ubuntu-latest
     needs: build
